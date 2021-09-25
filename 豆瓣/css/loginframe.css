@@ -1,0 +1,422 @@
+@font-face {
+  font-family: "iconfont";
+  src: url("../font/iconfont.eot");
+  src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"),
+    url("../font/iconfont.woff2") format("woff2"),
+    url("../font/iconfont.woff") format("woff"),
+    url("../font/iconfont.ttf") format("truetype"),
+    url("../font/iconfont.svg#iconfont") format("svg");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import "common.css";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+.hidden {
+  display: none;
+}
+.btn {
+  background: #41ac52;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+}
+input {
+  outline: none;
+}
+/* 输入框 */
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 34px;
+  border: 1px solid #e4e6e5;
+  /* 边框超过本身盒子 设置 */
+  box-sizing: border-box;
+  font-size: 13px;
+  /* 缩进 */
+  padding-left: 10px;
+  border-radius: 4px;
+}
+/* 输入框结束 */
+/* 更大的缩进 */
+input[type="text"].more-text-indent {
+  padding-left: 60px;
+}
+/* 更大的缩进 */
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearflx::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#contianer-one {
+  width: 300px;
+  height: 300px;
+  color: #9b9b9b;
+  line-height: 2;
+  padding: 30px 10px 10px 10px;
+  position: relative;
+}
+/* 切换菜单 */
+#contianer-one .login-one .switch-menu {
+  font-size: 13px;
+}
+#contianer-one .login-one .switch-menu span {
+  width: 150px;
+
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 1px solid #ececec;
+}
+
+#contianer-one .login-one .switch-menu .selected-one {
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #494949;
+  margin-bottom: -1px;
+}
+#contianer-one .login-one .switch-menu .selected-two:hover {
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #494949;
+  margin-bottom: -1px;
+}
+#contianer-one .login-one .switch-menu .selected-two:hover ~ .selected-one {
+  display: none;
+}
+
+/* 切换菜单结束 */
+
+/* 短信登录/注册表单 */
+#contianer-one .login-one .form {
+  position: relative;
+}
+#contianer-one .login-one .form .form-item {
+  position: relative;
+  margin: 10px 0;
+}
+#contianer-one .login-one .form .form-item .txt-one {
+  font-size: 12px;
+}
+#contianer-one .login-one .form .form-item .txt-two {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  color: #41ac52;
+}
+#contianer-one .login-one .form .form-item .verification {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  color: #41ac52;
+  text-align: right;
+  position: absolute;
+  right: 8px;
+  top: 2px;
+}
+#contianer-one .login-one .form .form-item .btn {
+  width: 100%;
+  height: 34px;
+  background: rgba(9, 163, 34, 0.4);
+  font-size: 15px;
+}
+#contianer-one .login-one .form .form-item .cannot {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  color: #41ac52;
+  text-align: right;
+  position: absolute;
+  right: 0;
+}
+/* 密码登录 */
+#contianer-one .login-one .form .form-item .retrieve {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 12px;
+  color: #41ac52;
+  text-align: right;
+  position: absolute;
+  right: 8px;
+  top: 2px;
+}
+
+/* 第三方登录 */
+
+#contianer-one .login-one .form .form-item-three {
+  width: 100%;
+  border-top: 1px solid #b4b4b4;
+  position: absolute;
+  top: 205px;
+}
+#contianer-one .login-one .form .form-item-three .threelogin {
+  font-size: 11px;
+  color: #9b9b9b;
+}
+#contianer-one .login-one .form .form-item-three a {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  margin-left: 12px;
+  vertical-align: -3px;
+}
+#contianer-one .login-one .form .form-item-three .iconfont.iconweixin {
+  color: rgb(100, 197, 116);
+}
+#contianer-one
+  .login-one
+  .form
+  .form-item-three
+  .iconfont.iconshejiaotubiao-42 {
+  color: rgb(242, 114, 114);
+}
+
+/* country-code下拉菜单 */
+
+#contianer-one .login-one .form .form-item .country-code {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 51px;
+  height: 26px;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 26px;
+  border-right: 1px solid #e4e6e5;
+  cursor: pointer;
+}
+/* country-code下拉菜单结束 */
+
+/* choose-area下拉菜单 */
+#contianer-one .login-one .form .form-item .country-code .choose-area {
+  /* 铺满整个视口,背景为半透明 */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+}
+#contianer-one .login-one .form .form-item .country-code .choose-area .center {
+  width: 285px;
+  height: 225px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  cursor: auto;
+  overflow: hidden;
+}
+#contianer-one
+  .login-one
+  .form
+  .form-item
+  .country-code
+  .choose-area
+  .center
+  .dropout {
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  padding: 0 3px;
+  z-index: 1;
+  font: 11px/1.2 "Comic Sans MS", sans-serif;
+  color: #b4b4b4;
+}
+#contianer-one
+  .login-one
+  .form
+  .form-item
+  .country-code
+  .choose-area
+  .center
+  .dropout:hover {
+  color: rgb(248, 129, 129);
+}
+#contianer-one
+  .login-one
+  .form
+  .form-item
+  .country-code
+  .choose-area
+  .center
+  .title {
+  background: #ebf5eb;
+  height: 42px;
+  line-height: 42px;
+  text-align: left;
+  padding-left: 10px;
+  color: #060;
+  font-weight: bold;
+}
+#contianer-one
+  .login-one
+  .form
+  .form-item
+  .country-code
+  .choose-area
+  .center
+  .countrycode {
+  height: 180px;
+  overflow: auto;
+  padding: 10px 9px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#contianer-one
+  .login-one
+  .form
+  .form-item
+  .country-code
+  .choose-area
+  .center
+  .countrycode
+  .check {
+  float: left;
+  margin-left: 10px;
+  font-weight: bold;
+}
+#contianer-one
+  .login-one
+  .form
+  .form-item
+  .country-code
+  .choose-area
+  .center
+  .countrycode
+  li {
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #e4e6e5;
+}
+#contianer-one
+  .login-one
+  .form
+  .form-item
+  .country-code
+  .choose-area
+  .center
+  .countrycode
+  li:first-child {
+  border-top: 1px solid #e4e6e5;
+}
+#contianer-one
+  .login-one
+  .form
+  .form-item
+  .country-code
+  .choose-area
+  .center
+  .countrycode
+  li:hover {
+  color: #41ac52;
+}
+/* choose-area下拉菜单 */
+
+/* hover效果 */
+#contianer-one .login-one .form .on-two {
+  display: none;
+}
+#contianer-one .login-one .on-one {
+  /* display: none; */
+}
+#contianer-one .login-one {
+  /* display: none; */
+}
+#contianer-one .qrcode {
+  display: none;
+}
+
+/* 二维码登录 */
+
+/*鼠标在+86后下拉菜单出现*/
+.choose-area {
+  display: none;
+}
+.selected-tree:hover ~ .choose-area {
+  display: block;
+}
+/*  */
+#contianer-one .qrcode .title {
+  font-size: 13px;
+  color: #333;
+  font-weight: 600;
+  text-align: left;
+}
+#contianer-one .qrcode .code {
+  display: inline-table;
+  width: 172px;
+  height: 172px;
+  position: relative;
+}
+#contianer-one .qrcode .code img {
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  vertical-align: middle;
+  text-align: center;
+  position: absolute;
+  left: 15px;
+}
+#contianer-one .qrcode .text {
+  display: inline-block;
+  width: 165px;
+  height: 25px;
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 3px 20px;
+  background-color: rgba(119, 119, 119, 0.2);
+  font-size: 13px;
+  text-align: center;
+  line-height: 25px;
+  color: #333;
+}
+/* 二维码登录 */
+/*  */
+/* #contianer-one .change {
+  position: relative;
+} */
+
+#contianer-one .change .icon-qrcode {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+#contianer-one .change .icon-pc {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+#contianer-one .change .icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}

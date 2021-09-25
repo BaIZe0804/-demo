@@ -1,0 +1,537 @@
+/* @font-face {
+  font-family: "iconfont";
+  src: url("../font/iconfont.eot");
+  src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"),
+    url("../font/iconfont.woff2") format("woff2"),
+    url("../font/iconfont.woff") format("woff"),
+    url("../font/iconfont.ttf") format("truetype"),
+    url("../font/iconfont.svg#iconfont") format("svg");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+@import "common.css";
+@import "reset.css";
+@import "//at.alicdn.com/t/font_2404973_34nppdi9u0p.css";
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+.section:nth-child(even) {
+  background: #f7f7f7;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+.hidden {
+  display: none;
+}
+input {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/* 豆瓣logo */
+.nav-1 {
+  /* height: 34px; */
+  margin-bottom: 30px;
+  /* margin-top: -30px; */
+  background-color: #edf4ec;
+}
+.nav-1 #douban-logo {
+  display: inline-block;
+  background: url(../img/豆瓣douban.png) no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 103px;
+  margin: 7px 14px;
+}
+/* 豆瓣logo */
+
+/* 首页通用样式 */
+.container {
+  width: 950px;
+  margin: 0 auto;
+}
+
+/* 首页通用样式结束 */
+
+/* 页面头部开始· */
+.header {
+  height: 90px;
+}
+.header .container {
+  width: 950px;
+  margin: 0 auto;
+}
+.header .logo a {
+  display: inline-block;
+  position: relative;
+  left: 10px;
+  top: -4px;
+  width: 73px;
+  height: 24px;
+  margin: 4px 24px 0 0;
+  background: url(../img/豆瓣网.png) no-repeat;
+  background-size: contain;
+}
+.search {
+  width: 270px;
+  height: 30px;
+  border: 1px solid rgb(208, 209, 209);
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 10px;
+}
+.search .search-bar::placeholder {
+  color: rgb(208, 209, 209);
+  font-size: 12px;
+}
+.search .search-bar {
+  width: 230px;
+  height: 20px;
+  padding: 5px;
+  border: none;
+  vertical-align: middle;
+}
+.search .search-but {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.search form {
+  height: 30px;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  position: relative;
+  margin-top: 5px;
+}
+nav .menu-read {
+  display: inline-block;
+  background: url(../img/a1.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -400px;
+  width: 40px;
+  height: 20px;
+}
+nav .menu-move {
+  display: inline-block;
+  background-image: url(../img/a2.png);
+  background-size: contain;
+  position: absolute;
+  left: -340px;
+  width: 45px;
+  height: 20px;
+}
+nav .menu-music {
+  display: inline-block;
+  background: url(../img/a3.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -280px;
+  top: -1px;
+  width: 43px;
+  height: 20px;
+}
+nav .menu-group {
+  display: inline-block;
+  background-image: url(../img/a6.png);
+  background-size: contain;
+  position: absolute;
+  left: -222px;
+  top: -2px;
+  width: 44px;
+  height: 20px;
+}
+nav .menu-city {
+  display: inline-block;
+  background-image: url(../img/a4.png);
+  background-size: contain;
+  position: absolute;
+  left: -165px;
+  top: -2px;
+  width: 44px;
+  height: 20px;
+}
+nav .menu-doupin {
+  display: inline-block;
+  background-image: url(../img/a7.png);
+  background-size: contain;
+  position: absolute;
+  left: -105px;
+  top: -2px;
+  width: 42px;
+  height: 20px;
+}
+nav .menu-fm {
+  display: inline-block;
+  background-image: url(../img/a5.png);
+  background-size: contain;
+  position: absolute;
+  left: -45px;
+  top: -2px;
+  width: 40px;
+  height: 20px;
+}
+nav .menu-time {
+  display: inline-block;
+  background-image: url(../img/a0.png);
+  background-size: contain;
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  width: 42px;
+  height: 20px;
+}
+
+/* 页面头部结束 */
+
+/* 登录样式 */
+#Login {
+  position: relative;
+  background-color: rgba(167, 245, 219, 0.2);
+  width: 100%;
+  height: 304px;
+  top: 50px;
+  left: 0px;
+  margin: 0 0 80px 0;
+}
+#Login .banner {
+  width: 100%;
+  height: 304px;
+  background: url("../img/photo.jpg") no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -35px;
+  top: 0px;
+}
+#Login .banner .weitiao {
+  position: relative;
+  left: -200px;
+}
+#Login .banner .right-login {
+  width: 350px;
+  height: 350px;
+}
+#Login .banner .version {
+  position: relative;
+}
+#Login .banner .version .douban-txt {
+  display: inline-block;
+  font-size: 25px;
+  color: #111;
+  position: absolute;
+  top: 100px;
+  right: 500px;
+}
+#Login .banner .version .douban-num {
+  display: inline-block;
+  font-size: 25px;
+  color: #111;
+  position: absolute;
+  top: 100px;
+  right: 450px;
+}
+#Login .banner .version .download {
+  width: 115px;
+  height: 30px;
+  background-color: #0eaa28;
+  border-radius: 2px;
+  position: absolute;
+  top: 150px;
+  right: 435px;
+}
+#Login .banner .version .download .downapp {
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  padding: 9px 21px;
+  line-height: 30px;
+  transition: 2s;
+  cursor: pointer;
+}
+#Login .banner .version .download .downapp:hover {
+  color: rgb(6, 220, 231);
+  font-weight: bolder;
+}
+#Login .banner .version .downcode img {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #0eaa28;
+  border-radius: 2px;
+  position: absolute;
+  top: 150px;
+  right: 400px;
+}
+
+#Login .banner .version .qrcode-img {
+  position: absolute;
+  display: block;
+  left: 1089px;
+  top: 150px;
+  width: 195px;
+  height: 195px;
+}
+#Login .banner .version p {
+  color: #666;
+  font-size: 15px;
+  text-align: center;
+  line-height: 2;
+}
+
+.downcode:hover ~ .down-qrcode {
+  display: block;
+}
+/* 登录样式结束 */
+
+/* 三栏布局通用样式 */
+.aside-left {
+  float: left;
+  width: 100px;
+  margin-left: 20px;
+}
+.aside-right {
+  float: right;
+  width: 265px;
+  margin-right: 30px;
+}
+.middle-txt {
+  /* 创建BFC */
+  overflow: hidden;
+}
+.titlehot {
+  margin: 12px 0;
+}
+.titletxt {
+  /* h1~h6为块盒 */
+  display: inline-block;
+  color: #072;
+  font-size: 15px;
+  font-weight: 500;
+}
+.titlehot .link {
+  font-size: 12px;
+}
+a {
+  color: #37a;
+}
+.aside-left .title {
+  font-size: 24px;
+}
+.dark-color {
+  color: #494949;
+}
+
+/* 顺序
+a:link、a:visited、a:hover、a:active
+link:连接平常的状态 
+visited:连接被访问过之后 
+hover:鼠标放到连接上的时候
+active:连接被按下的时候 
+ */
+a:hover {
+  color: #fff;
+  background-color: #37a;
+}
+a:active {
+  color: #fff;
+  background: #f93;
+}
+/* 伪类也属于加入元素的一部分
+a元素加入伪类后的hover也会给到after和before
+解决：a标签外层在嵌套一层span
+把伪类添加到span上
+*/
+.titletxt::after {
+  /* content可以添加内容 */
+  content: " · · · · · · ";
+}
+.titlehot .link::before {
+  content: "(";
+}
+.titlehot .link::after {
+  content: ")";
+}
+/*  三栏布局通用样式*/
+
+/* 中间样式 */
+
+#middle {
+  width: 100%;
+  height: 100%;
+}
+#middle .wrapper {
+  width: 950px;
+  height: 470px;
+  margin: 0 auto;
+}
+#middle .wrapper .hot .aside-right .hot-list li {
+  font-size: 12px;
+  margin: 10px 0 15px;
+}
+#middle .wrapper .hot .aside-right .hot-list .title .aspect {
+  color: #3377aa;
+  font-size: 14px;
+  margin: 0 0 6px;
+  display: inline-block;
+}
+#middle .wrapper .hot .aside-right .hot-list .title .aspect:hover {
+  color: #fff;
+  background-color: #37a;
+}
+#middle .wrapper .hot .aside-right .hot-list .title .aspect:active {
+  color: #fff;
+  background: #f93;
+}
+#middle .wrapper .hot .aside-right .hot-list .desc .liulan {
+  color: #aaa;
+  font-size: 13px;
+}
+/* #middle .wrapper .hot .aside-left {
+  width: 100%;
+} */
+#middle .wrapper .hot .aside-left .hotcontent .titletxt-1 {
+  display: inline-block;
+  width: 655px;
+  height: 22.4px;
+  color: #072;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+#middle .wrapper .hot .aside-left .hotmain .hotimg {
+  width: 350px;
+}
+#middle .wrapper .hot .aside-left li {
+  display: inline-block;
+  vertical-align: top;
+}
+#middle .wrapper .hot .aside-left li a {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 20.8px;
+}
+#middle .wrapper .hot .aside-left li .a-img:hover {
+  background: none;
+}
+#middle .wrapper .hot .aside-left .hotmain .hotimg ul li img {
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+}
+#middle .wrapper .hot .aside-left .hotmain {
+  position: relative;
+}
+#middle .wrapper .hot .aside-left .hotmain .hottxt {
+  display: inline-block;
+  width: 275px;
+  position: absolute;
+  left: 390px;
+  top: 0;
+}
+#middle .wrapper .hot .aside-left .hotmain .hottxt li a {
+  font-size: 15px;
+  display: inline-block;
+  margin: 5px 0;
+}
+#middle .wrapper .hot .aside-left .hotmain .hottxt li p {
+  display: inline-block;
+  width: 200px;
+  font-size: 12px;
+  text-align: center;
+  overflow: hidden;
+}
+/* 中间样式 */
+/*  */
+.zhuanlan {
+  width: 830px;
+  height: 22.4px;
+  margin-bottom: 12px;
+}
+.zhuanlan h2 {
+  margin-left: 15px;
+  line-height: 34.4px;
+  text-align: center;
+}
+middle-txt {
+  position: relative;
+}
+.time-main {
+  width: 850px;
+  position: absolute;
+  right: 225px;
+  margin: 20px;
+}
+.time-main li .p-b:hover {
+  background: none;
+}
+.time-main li {
+  display: inline-block;
+  width: 100px;
+  margin-right: 60px;
+  margin-bottom: 30px;
+}
+/*  */
+/*  英雄联盟*/
+
+.LOL {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  background-color: #000;
+}
+.LOL .lol-h1 {
+  width: 100%;
+  height: 17.6px;
+  background-color: #000;
+}
+.LOL .header {
+  width: 1358px;
+  height: 78px;
+  background-color: #000;
+  margin: 0 auto;
+}
+.LOL .header .lol-login {
+}
+/*  英雄联盟*/

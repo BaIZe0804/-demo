@@ -1,0 +1,15 @@
+/* 多页面共享的css代码 */
+
+@import "//at.alicdn.com/t/font_2404973_3ishjcc7fto.css";
+
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearflx::after {
+  content: "";
+  display: block;
+  clear: both;
+}
